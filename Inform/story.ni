@@ -37,10 +37,20 @@ The release number is 67.
 The story creation year is 2010.
 The maximum score is 2500.
 
+Include Vorple by Juhana Leinonen.
+Include Vorple Command Prompt Control by Juhana Leinonen.
+Include Vorple Element Manipulation by Juhana Leinonen.
+Include Vorple Hyperlinks by Juhana Leinonen.
+Include Vorple Modal Windows by Juhana Leinonen.
+include Vorple Multimedia by Juhana Leinonen.
+Include Vorple Notifications by Juhana Leinonen.
+Include Vorple Screen Effects by Juhana Leinonen.
+Include Vorple Status Line by Juhana Leinonen.
+Include Vorple Tooltips by Juhana Leinonen.
+
 
 Include Version 4 of Menus by Emily Short.
 Include Basic Help Menu by Emily Short.
-Include Basic Screen Effects by Emily Short.
 [Dependencies] [Important - must get loaded early here]
 Include Glulx Entry Points by Emily Short.
 Include Glulx Text Effects by Emily Short.
