@@ -2,7 +2,7 @@
 
 Book 0 - Pre game prep stuff
 
-Release along with an interpreter.
+Release along with the "Vorple" interpreter.
 Use memory economy.
 Use slow route-finding.
 [ The following adjust Informs compiler settings so that it allocates enough space. If these values are incorrect, inform will fail to compile.]
