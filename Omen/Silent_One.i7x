@@ -1,4 +1,4 @@
-Version 1 of Silent One by Omen begins here.
+Silent_One by Omen begins here.
 [Version 1 - file created by Omen]
 
 [Adds the extradimensional horror Silent Ones to be roaming around the Ancient Archives for reasons unknown.]
@@ -36,4 +36,4 @@ to say The Silent One:
 			say "     [if player is kinky]Being roughly used by the unearthly creature is starting to arouse you and you find your cock rapidly hardening. The creature notices your arousal, bring another smaller tentacle out to latch itself onto your cockhead. You moan as the tentacle on your cock applies a firm suction, ensuring that you won't be making a mess in the archives. Suddenly, you feel a large bulge against your asslips and a subsequent stretching of your sphincter. You look up at the tentacle that's been plunging in and out of your ass for the past few minutes, and see what you can only imagine to be an egg being forced inside you. With a forceful push, creature sends the egg traveling through your gut in a matter of seconds. You cum hard as the egg smashes into your prostate, shooting all of your seed directly into the creatures suckling appendage. Once you've calmed down, the creature lowers you to the ground with care. You find the soreness in your ass is almost nonexistant, it must be the egg releasing some kind of numbing agent.[else]The creature continues to brutalize your hole, intent on punishing your for being so clumsy. Once it feels you have had enough, it uncerimoniously draws its tentacle out of your ass and drops you to the ground.[end if] You wait on the ground for a few minutes, before trying to stand up on shakey legs. The creature did quite a number on you, ensuring you won't be making too much noise by stomping you feet around.";
 
 
-Silent One ends here.
+Silent_One ends here.
