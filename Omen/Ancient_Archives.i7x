@@ -1,4 +1,4 @@
-Version 1 of Ancient Archives by Omen begins here.
+Ancient_Archives by Omen begins here.
 
 [Section 1 - Discovery event                 ]
 [Section 2 - Visions of the past             ]
@@ -199,4 +199,4 @@ to say browse_playing_with_fire_for_dummies:
 	say "     You see what appears to be a book on using fire in some regard, but you don't really understand the purpose of it. The book's numbering implies it should be on the first floor in the northern wing.";
 
 
-Ancient Archives ends here.
+Ancient_Archives ends here.
