@@ -11,7 +11,7 @@ Use MAX_INDIV_PROP_TABLE_SIZE of 500000.
 Use MAX_PROP_TABLE_SIZE of 51000000.
 use MAX_STATIC_DATA of 12500000.
 Use MAX_OBJ_PROP_COUNT of 1280.
-use MAX_SYMBOLS of 13000000. ["Compiler finished with code 10"]
+use MAX_SYMBOLS of 1300000. ["Compiler finished with code 10"]
 use MAX_NUM_STATIC_STRINGS of 370000. [ Code 10 ]
 use SYMBOLS_CHUNK_SIZE of 250000. [ Code 10 ]
 use ALLOC_CHUNK_SIZE of 1450000.
@@ -4562,7 +4562,7 @@ understand "end now" and "end game" as early birding.
 quitter is a number that varies.
 
 carry out early birding:
-	if playon is 1:
+	if playon is 1 and debugactive is 0:
 		say "You are already in play on mode. There is no rescue to wait for.";
 		stop the action;
 	decrease the score by 100;
@@ -6104,115 +6104,9 @@ Section x - Debug Commands - Not for release
 Section Lists of Tables - Not for release
 
 [intends to list stuff for debugging (or any other activity needing a list of what's in the game). output is formatted as CSV to simplify exporting. appears to be working properly.]
-TableListing is an action applying to one topic.
-Understand "tlist [text]" as TableListing.
 
-Carry out tablelisting:
-	let t be the topic understood;
-	if t in lower case is "object":
-		say "Name,Weight:[line break]";
-		sort table of game objects in object order;
-		repeat with X running from 1 to number of filled rows in table of game objects:
-			choose row X from the table of game objects;
-			if there is a Name entry:
-				say "[Name entry],[weight entry][line break]";
-		say "End of list of objects.";
-		stop the action;
-	else if t in lower case is "creature":
-		say "Name,Level,Area:[line break]";
-		sort Table of Random Critters in lev order;
-		repeat with X running from 1 to number of filled rows in Table of Random Critters:
-			choose row X from the Table of Random Critters;
-			if there is a lev entry:
-				say "[Name entry],[lev entry],[area entry][line break]";
-		say "End of list of random critters.";
-		stop the action;
-	else if t in lower case is "critcombat":
-		say "Critter Combats:[line break]";
-		sort Table of Critter Combat in combat order;
-		repeat with X running from 1 to number of filled rows in Table of Critter Combat:
-			choose row X from the Table of Critter Combat;
-			if there is a Name entry:
-				say "[Name entry][line break]";
-		say "End of list of critter combats.";
-		stop the action;
-	else if t in lower case is "room":
-		say "Rooms:[line break]";
-		repeat with n running through rooms:
-			say "[n][line break]";
-		say "End of list of rooms.";
-		stop the action;
-	else if t in lower case is "npc":
-		say "NPC: [line break]";
-		repeat with n running through person:
-			say "[n][line break]";
-		say "End of list of NonPlayerCharacters.";
-		stop the action;
-	else if t in lower case is "grab":
-		say "Grab Object:[line break]";
-		repeat with n running through Grab Object:
-			say "[n][line break]";
-		say "End of list of Grab Objects.";
-		stop the action;
-	else if t in lower case is "weapon":
-		say "Weapon:[line break]";
-		repeat with n running through A armament:
-			say "[n][line break]";
-		say "End of list of weapons.";
-		stop the action;
-	else if t in lower case is "equipment":
-		say "Equipment:[line break]";
-		repeat with n running through Equipment:
-			say "[n][line break]";
-		say "End of list of Equipment.";
-		stop the action;
-	else if t in lower case is "heat":
-		say "Name, Heat Cycle, Heat Duration, Female Heat, MPreg Heat:[line break]";
-		sort Table of infection heat in infect name order;
-		repeat with X running from 1 to number of filled rows in Table of infection heat:
-			choose row X from the Table of infection heat;
-			if there is a infect Name entry:
-				if there is a fheat entry and there is a mpregheat entry:
-					say "[infect Name entry]: [heat cycle entry],[heat duration entry], F: [if there is a fheat entry and fheat entry is true]Yes[else]No[end if], MPreg: [if there is a mpregheat entry and mpregheat entry is true]Yes[else]No[end if][line break]";
-				else:
-					say "[infect Name entry]: [heat cycle entry],[heat duration entry] - not updated to F/MPreg[line break]";
-		say "End of list of heat.";
-		stop the action;
-	else if t in lower case is "zephyr":
-		say "Zephyr Goods,Price[line break]";
-		sort Table of Zephyr Goods in price order;
-		repeat with X running from 1 to number of filled rows in Table of Zephyr Goods:
-			choose row X from the Table of Zephyr Goods;
-			if there is a price entry:
-				say "[Name entry],[price entry][line break]";
-		say "End of list of Zephyr Goods.";
-		stop the action;
-	else if t in lower case is "biker":
-		say "Biker Destination,Sort Order[line break]";
-		sort Table of Biker Destinations in sortorder order;
-		repeat with X running from 1 to number of filled rows in Table of Biker Destinations:
-			choose row X from the Table of Biker Destinations;
-			if there is a title entry:
-				say "[title entry],[sortorder entry][line break]";
-		say "End of list of Biker Destinations.";
-		stop the action;
-	else if t in lower case is "loot":
-		say "Creature,Loot,Lootchance:[line break]";
-		sort Table of Random Critters in loot order;
-		repeat with X running from 1 to number of filled rows in Table of Random Critters:
-			choose row X from the Table of Random Critters;
-			if there is a loot entry:
-				say "[Name entry],[loot entry],[lootchance entry][line break]";
-		say "End of list of loot.";
-		stop the action;
-	else if t in lower case is "situation":
-		say "Situations:[line break]";
-		repeat with n running through situations:
-			say "[n][line break]";
-		say "End of list of Situations.";
-		stop the action;
-	else:
-		say "nothing to list, try again.";
+
+Section Lists of Tables - Not for release
 
 Book 7 - Endings
 
@@ -7007,7 +6901,7 @@ Include Zeke by Qazarar.
 Include Zephias by Wahn.
 Include Zigor by Stripes.
 Include Zoe by Kernog.
-
+Include Kaydex by Jfm Meyers
 [Pets]
 Include Artemis by Stripes.
 Include Aurora by Stripes.

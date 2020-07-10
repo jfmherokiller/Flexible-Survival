@@ -787,5 +787,14 @@ This is the Doberman Bitch Infection rule:
 					say "     Then there was that time in Egypt, when you were looking for that king Cobra mutant that was terrorizing the people of Cairo, that Tyr decided to be cute and sneak into your hotel room to bind you to the bed with silk ties only to then pound you into the mattress while you were half asleep. Your muffled screams had almost alerted Stu, the hyena herm that you had been sharing a room with, into waking up, but thankfully the other sleeps like a rock. Next it was back in the states with you pushing through a forest only to suddenly get kidnapped for an hour by Tyr to have hot and wild sex up along the branches of a tree. Then there was that time in South America where Tyr mounted you underneath that waterfall while you had been on the lookout for the twin headed jaguar creature.";
 					say "     The there was the time in Japan when Tyr had wanted to see how drunk you could get before deciding that having sex with you in one of the local shrines while you were sloshed out of your mind would be kinky. The kitsunes that had found you both were amicable enough to let you leave without being cursed, or fined, after agreeing to be able to watch. Then there was that time...";
 
+DobeReset is an action applying to nothing.
+Understand "DobeReset" as DobeReset.
+check DobeReset:
+	if debugactive is 0:
+		say "You aren't currently debugging.";
+		stop the action;
+Carry out DobeReset:
+	now dobielibido is 0;
+	now dobieresist is 0;
 
 Doberman Cop ends here.
